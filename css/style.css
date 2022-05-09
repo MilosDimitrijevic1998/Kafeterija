@@ -1,0 +1,115 @@
+/* fonts
+          font-family: 'Catamaran', sans-serif;
+          font-family: 'Grand Hotel', cursive;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-primary: #6d4927;
+  --clr-primary-light: #cf9661;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --ff-primary: 'Catamaran', sans-serif;
+  --ff-secondary: 'Grand Hotel', cursive;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+body{
+  font-style: var(--ff-primary);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.banner a{
+  text-decoration: none;
+  background-color: #678e3e;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.25rem;
+  padding: 0.9rem 1.8rem;
+  outline: 0.125rem solid #678e3e;
+  outline-offset: 0.25rem;
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+  background-color: #beed8c;
+  color: #678e3e;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4{
+  /* letter-spacing: var(--spacing); */
+  text-transform: capitalize;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.banner h1{
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  margin-bottom: 2rem;
+}
+
+.banner h2{
+  font-size: 2.3rem;
+  font-family: var(--ff-secondary);
+  color: #678e3e;
+  margin-bottom: 15px;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h4{
+  font-size: 0.85rem;
+}
+
+p{
+  margin-bottom: 1.25rem;
+}
+
+
+/* navbar */
+
+
+
+
+/* header */
+.header{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/main-bg.jpeg) center/cover no-repeat fixed;
+  position: relative;
+}
+
+.banner{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
